@@ -1,0 +1,40 @@
+######################
+#### DEPENDENCIES ####
+######################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/setup.typoscript">
+
+
+##############
+#### PAGE ####
+##############
+page {
+    includeCSS {
+        theme = EXT:mypackage/Resources/Public/Scss/Theme/theme.scss
+        extension-theme = EXT:mypackage/Resources/Public/asset/css/styles.css
+ 
+    }
+
+    includeJSLibs {
+
+    }
+
+    includeJS {
+
+    }
+
+    includeJSFooterlibs {
+
+    }
+
+    includeJSFooter {
+        mypackage_scripts = EXT:mypackage/Resources/Public/JavaScript/Dist/scripts.js
+         academie_jquery = EXT:mypackage/Resources/Public/asset/js/jquery/jquery-2.2.4.min.js
+        mypackage_menu = EXT:mypackage/Resources/Public/asset/js/popper.min.js
+        mypackage_jplugins = EXT:mypackage/Resources/Public/asset/js/bootstrap.min.js
+        mypackage_jplayer = EXT:mypackage/Resources/Public/asset/js/plugins.js
+        mypackage_animate = EXT:mypackage/Resources/Public/asset/js/classy-nav.min.js
+        mypackage_translate = EXT:mypackage/Resources/Public/asset/js/jquery-ui.min.js
+        mypackage_animateheade = EXT:mypackage/Resources/Public/asset/js/active.js
+        
+    }
+}

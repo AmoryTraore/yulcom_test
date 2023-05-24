@@ -1,0 +1,21 @@
+{
+    "name": "djiguiya-blo/yulcom",
+    "type": "typo3-cms-extension",
+    "description": "my package",
+    "homepage": "https://www.yulcom.com",
+    "license": ["GPL-2.0-or-later"],
+    "keywords": ["TYPO3 CMS"],
+    "require": {
+        "bk2k/bootstrap-package": "^12.0 || ^13.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "DjiguiyaBlo\\Yulcom\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "yulcom"
+        }
+    }
+}

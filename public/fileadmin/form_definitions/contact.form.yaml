@@ -1,0 +1,67 @@
+
+renderingOptions:
+  submitButtonLabel: Envoyer
+type: Form
+identifier: contact
+label: Contact
+prototypeName: standard
+finishers:
+  -
+    options:
+      subject: '{text-3}'
+      recipients:
+        admin@admin.com: ''
+      senderAddress: admin@admin.com
+      senderName: '{text-1}'
+      addHtmlPart: true
+      attachUploads: true
+      useFluidEmail: false
+      title: ''
+    identifier: EmailToSender
+renderables:
+  -
+    renderingOptions:
+      previousButtonLabel: ''
+      nextButtonLabel: ''
+    type: Page
+    identifier: page-1
+    label: ''
+    renderables:
+      -
+        type: GridRow
+        identifier: gridrow-1
+        label: 'Grid: Row'
+        renderables:
+          -
+            defaultValue: ''
+            type: Text
+            identifier: text-1
+            label: Nom
+          -
+            defaultValue: ''
+            type: Text
+            identifier: text-2
+            label: Prénom
+      -
+        type: GridRow
+        identifier: gridrow-2
+        label: 'Grid: Row'
+        renderables:
+          -
+            defaultValue: ''
+            type: Email
+            identifier: email-1
+            label: 'Email address'
+            validators:
+              -
+                identifier: EmailAddress
+          -
+            defaultValue: ''
+            type: Text
+            identifier: text-3
+            label: Objet
+      -
+        defaultValue: ''
+        type: Textarea
+        identifier: textarea-1
+        label: Message

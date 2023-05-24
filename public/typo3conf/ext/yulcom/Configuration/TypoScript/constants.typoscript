@@ -1,0 +1,60 @@
+######################
+#### DEPENDENCIES ####
+######################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/constants.typoscript">
+
+
+############
+### PAGE ###
+############
+page {
+    logo {
+        file = EXT:yulcom/Resources/Public/Images/logo.svg
+        fileInverted = EXT:yulcom/Resources/Public/Images/logo-inverted.svg
+        height = 52
+        width = 192
+        alt = yulcom
+        linktitle = yulcom
+    }
+    favicon {
+        file = EXT:yulcom/Resources/Public/Icons/favicon.ico
+    }
+    fluidtemplate {
+        layoutRootPath = EXT:yulcom/Resources/Private/Layouts/Page/
+        partialRootPath = EXT:yulcom/Resources/Private/Partials/Page/
+        templateRootPath = EXT:yulcom/Resources/Private/Templates/Page/
+    }
+}
+
+
+##################
+### EXTENSIONS ###
+##################
+plugin.bootstrap_package {
+    view {
+        layoutRootPath = EXT:yulcom/Resources/Private/Layouts/
+        partialRootPath = EXT:yulcom/Resources/Private/Partials/
+        templateRootPath = EXT:yulcom/Resources/Private/Templates/
+    }
+}
+
+
+########################
+### CONTENT ELEMENTS ###
+########################
+plugin.bootstrap_package_contentelements {
+    view {
+        layoutRootPath = EXT:yulcom/Resources/Private/Layouts/ContentElements/
+        partialRootPath = EXT:yulcom/Resources/Private/Partials/ContentElements/
+        templateRootPath = EXT:yulcom/Resources/Private/Templates/ContentElements/
+    }
+}
+
+
+################################
+### BOOTSTRAP SCSS CONSTANTS ###
+################################
+plugin.bootstrap_package.settings.scss {
+    primary = #eb3e4a
+    secondary = #013859
+}

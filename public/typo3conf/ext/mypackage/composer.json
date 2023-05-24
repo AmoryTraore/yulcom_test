@@ -1,0 +1,21 @@
+{
+    "name": "soumou-tech/mypackage",
+    "type": "typo3-cms-extension",
+    "description": "",
+    "homepage": "https://www.soumou-tech.com",
+    "license": ["GPL-2.0-or-later"],
+    "keywords": ["TYPO3 CMS"],
+    "require": {
+        "bk2k/bootstrap-package": "^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "SoumouTech\\Mypackage\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "mypackage"
+        }
+    }
+}
