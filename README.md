@@ -4,7 +4,7 @@ Projet test sur typo3
 # version php requis
 "php": "^7.1 || ^8.0"
 # infos connexion db
-'dbname' => 'yulcom_test',
+'dbname' => 'yulcom',
 
 'user' => 'root'
 
